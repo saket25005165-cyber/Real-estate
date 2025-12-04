@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Listings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>DreamHomes Real Estate</h1>
+        <p>Find Your Perfect Home Today</p>
+    </header>
+
+    <!-- Search Section -->
+    <section id="search">
+        <h2>Search Properties</h2>
+        <input type="text" id="locationInput" placeholder="Search by location...">
+        <select id="typeFilter">
+            <option value="">All Property Types</option>
+            <option value="Apartment">Apartment</option>
+            <option value="House">House</option>
+            <option value="Villa">Villa</option>
+        </select>
+        <button onclick="filterProperties()">Search</button>
+    </section>
+
+    <!-- Property Listing Section -->
+    <section id="listings">
+        <h2>Available Properties</h2>
+
+        <!-- Property 1 -->
+        <div class="property" data-location="New York" data-type="Apartment">
+            <img height="400px" width="400px" src="https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg" alt="Apartment NYC">
+            <h3>Modern Apartment in New York</h3>
+            <p><strong>Price:</strong> $250,000</p>
+            <p><strong>Type:</strong> Apartment</p>
+            <p><strong>Location:</strong> New York</p>
+        </div>
+
+        <!-- Property 2 -->
+        <div class="property" data-location="Los Angeles" data-type="House">
+            <img height="400px" width="400px" src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg" alt="House LA">
+            <h3>Beautiful House in Los Angeles</h3>
+            <p><strong>Price:</strong> $450,000</p>
+            <p><strong>Type:</strong> House</p>
+            <p><strong>Location:</strong> Los Angeles</p>
+        </div>
+
+        <!-- Property 3 -->
+        <div class="property" data-location="Miami" data-
